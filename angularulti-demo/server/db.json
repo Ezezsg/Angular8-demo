@@ -1,0 +1,46 @@
+{
+  "vehiculos": [
+    {
+      "id": 1,
+      "marca": "Nissan",
+      "modelo": "Sentra",
+      "year": 1998,
+      "hp": 120
+    },
+    {
+      "id": 5,
+      "marca": "Lamborghini",
+      "modelo": "Countach",
+      "year": "1974",
+      "hp": "434"
+    },
+    {
+      "id": 10,
+      "marca": "Audi",
+      "modelo": "A6",
+      "year": 1995,
+      "hp": 392
+    },
+    {
+      "id": 11,
+      "marca": "Chevrolet",
+      "modelo": "Cruze",
+      "year": 2015,
+      "hp": 110
+    },
+    {
+      "id": 12,
+      "marca": "Chevrolet",
+      "modelo": "Onix",
+      "year": 2018,
+      "hp": 100
+    },
+    {
+      "id": 13,
+      "marca": "Ford",
+      "modelo": "Mustang GT",
+      "year": 2020,
+      "hp": 466
+    }
+  ]
+}

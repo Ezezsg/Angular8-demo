@@ -1,0 +1,44 @@
+<main class="container">
+	<form [formGroup]="mainForm">
+
+		<div class="form-group">
+			<label for="marca">Marca:</label>
+			<select name="marca" id="marca" class="form-control" formControlName="marca">
+				<option selected disabled>Seleccione...</option>
+				<option *ngFor="let marca of marcas" [value]="marca">{{marca}}</option>
+			</select>
+			<div [hidden]="mainForm.get('marca').valid || mainForm.get('marca').pristine" class="alert alert-danger">
+					No ingresaste la marca
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="modelo">Modelo:</label>
+			<input type="text" formControlName="modelo" class="form-control">
+			<div [hidden]="mainForm.get('modelo').valid || mainForm.get('modelo').pristine" class="alert alert-danger">
+					No ingresaste el modelo
+			</div>
+ 		</div>
+
+ 		<div class="form-group">
+			<label for="year">Año:</label>
+			<input type="number" formControlName="year" class="form-control">
+			<div [hidden]="mainForm.get('year').valid || mainForm.get('year').pristine" class="alert alert-danger">
+					No ingresaste el año
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="hp">HP:</label>
+			<input type="number" formControlName="hp" class="form-control">
+			<div [hidden]="mainForm.get('hp').valid || mainForm.get('hp').pristine" class="alert alert-danger">
+					No ingresaste el HP
+			</div>
+		</div>
+
+		<button class="btn btn-primary btn-block mt-2" (click)="submitForm()" [disabled]="!mainForm.valid">Aceptar</button>
+		<a routerLink="/vehiculo" class="btn btn-primary btn-block">
+						Volver
+		</a>
+	</form>
+</main>

@@ -1,0 +1,27 @@
+<main class="container">
+	<h2 class="text-center">Baja de un vehículo</h2>
+
+	<article class="card col-6 mx-auto text-danger border-danger">
+       	<div class="row">
+        	<div class="card-body col-12 text-center">
+        		<span class="lead">
+        			{{vehiculo.marca}}
+        		</span>
+        		<hr>
+        		Modelo: {{vehiculo.modelo}}
+        		<hr>
+        		Año: {{vehiculo.year}}
+        		<hr>
+        		HP: {{vehiculo.hp}}
+        		<br><br>
+
+        		<button class="btn btn-danger btn-block py-2" (click)="borrar()">
+        			Confirmar Baja
+        		</button>
+        		<a routerLink="/vehiculo" class="btn btn-primary btn-block">
+					Volver
+		     	</a>
+        	</div>
+        </div>
+    </article>
+</main>
