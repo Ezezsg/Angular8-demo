@@ -9,6 +9,7 @@ Instalar json-server
 Crear la carpeta
 
 > md server
+
 > cd server
 
 Crear el archivo db.json
